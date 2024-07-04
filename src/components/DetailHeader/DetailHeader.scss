@@ -1,0 +1,32 @@
+@use "../../styles/partials/typography";
+@use "../../styles/partials/variables";
+
+
+.detail__header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.6rem;
+    background-color: variables.$JetBlack;
+    color: variables.$primarywhite;
+  
+    &-search--icon {
+      position: absolute;
+      left: 5%; 
+      top: 50%;
+      transform: translateY(-50%);
+      filter: brightness(0) invert(1);
+    }
+  
+    .detail__header-title {
+      font-size: 1.8rem;
+      font-family: Barlow;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+
+.back-icon{
+    border-radius: 50%;
+}
