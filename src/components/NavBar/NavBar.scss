@@ -1,0 +1,36 @@
+@use "../../styles/partials/typography";
+@use "../../styles/partials/variables";
+
+.nav {
+    width: 100%;
+  }
+  
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav__item {
+    margin: 0 10px;
+  }
+  
+  .nav__button {
+    background: none;
+    color: variables.$primarywhite;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-decoration: none;
+
+    &-active{
+    border-bottom: 0.2rem solid variables.$primarywhite;
+    }
+  }
+  
+  .nav__button:hover {
+    opacity: 0.8;
+  }
