@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer'
 import Header from '../../components/Header/Header'
 import NavBar from '../../components/NavBar/NavBar'
 import { useState } from 'react'
+import PositionList from '../../components/PositionList/PositionList'
 
 const HomePage = () => {
 
@@ -12,7 +13,7 @@ const HomePage = () => {
     <>
     <Header />
     <NavBar selectedSport={selectedSport} setSelectedSport={setSelectedSport}/>
-    {/* List of Positions */}
+    <PositionList selectedSport={selectedSport} />
     <Footer />
     </>
   )

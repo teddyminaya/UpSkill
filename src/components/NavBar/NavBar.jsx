@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const NavBar = ({selectedSport, setSelectedSport}) => {
   
-    console.log(setSelectedSport)
+   
     return (
     <nav className="nav">
       <ul className="nav__list">
