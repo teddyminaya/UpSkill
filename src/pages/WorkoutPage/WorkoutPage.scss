@@ -1,0 +1,89 @@
+@use "../../styles/partials/typography";
+@use "../../styles/partials/variables";
+
+.workout-page {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$JetBlack;
+  color: variables.$primarywhite;
+  font-family: Barlow, sans-serif;
+  font-weight: 700;
+  padding: 2.0rem;
+
+  .workout-image {
+    .image-placeholder {
+      background-color: variables.$UpskillDarkBlue;
+      height: 20rem;
+      width: 100%;
+      border-radius: 1.0rem;
+    }
+  }
+
+  .workout-details {
+    margin-top: 2.0rem;
+
+    .workout-title {
+      font-size: 2.4rem;
+      margin-bottom: 2.0rem;
+    }
+
+    .workout-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.0rem;
+
+      .stat {
+        display: flex;
+        flex-direction: column;
+
+        .stat-label {
+          font-size: 1.4rem;
+          color: #888;
+        }
+
+        .stat-value {
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .timer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.0rem;
+
+      .time-unit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .time {
+          font-size: 2.4rem;
+          font-weight: 700;
+        }
+
+        .unit {
+          font-size: 1.2rem;
+          color: #888;
+        }
+      }
+    }
+
+    .start-button {
+      width: 100%;
+      padding: 15px;
+      background-color: variables.$UpskillBlue;
+      color: variables.$primarywhite;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: variables.$UpskillDarkBlue;
+      }
+    }
+  }
+}
