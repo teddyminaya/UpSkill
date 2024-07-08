@@ -1,5 +1,6 @@
 import React from 'react'
 import "./PositionCard.scss";
+import { Link } from 'react-router-dom';
 
 const PositionCard = ({item}) => {
   
@@ -14,7 +15,7 @@ const PositionCard = ({item}) => {
           <p className="card__duration">{item.duration}</p>
         </div>
         <div className='card__button-container'>
-        <button className="card__button">Start Now</button>
+        <Link to = {`/workoutdetails/${item.id}`}><button className="card__button">Start Now</button> </Link>
         </div>
       </div>
     </>
