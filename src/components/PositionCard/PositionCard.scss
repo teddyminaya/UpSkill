@@ -51,6 +51,11 @@
     display: flex;
     justify-content: flex-end;
     width: 100%; 
+    a {
+        width: 30%;
+        text-decoration: none;
+        margin: 0 1.5rem 1.5rem;
+      }
   }
   &__button {
     display: flex;
@@ -58,7 +63,7 @@
     justify-content: center;
     font-family: Barlow;
     font-weight: 700;
-    width: 30%;
+    width: 85%;
     margin: 0 1.5rem 1.5rem;
     padding: 1rem 0;
     background-color: variables.$UpskillBlue;

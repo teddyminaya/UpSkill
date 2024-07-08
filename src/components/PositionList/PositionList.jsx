@@ -5,6 +5,9 @@ import PositionCard from '../PositionCard/PositionCard'
 
 const PositionList = ({selectedSport}) => {
     const [positions, setPositions]= useState([])
+    const filtered = selectedSport ? positions.filter((position) => {
+        return selectedSport === position.sport.toLowerCase()
+    }) : positions
     console.log(positions)
     useEffect(() => {
         const loadPositions = async () => {
@@ -20,7 +23,7 @@ const PositionList = ({selectedSport}) => {
   
     return (
     <>
-    {positions.map((el) => { 
+    {filtered.map((el) => { 
     return <PositionCard  key= {el.id} item={el} />
     })}
     </>
