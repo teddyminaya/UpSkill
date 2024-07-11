@@ -61,13 +61,18 @@ const WorkoutPage = () => {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2" sx={{fontSize: '2.0rem'}}>
-            NBA WORKOUT 
+            NBA WORKOUT 🏀
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2, fontSize: '1.8rem', 
         lineHeight: 1.5  }}>
-            4 BOX SQUATS <br />
-            4 Bench Press <br />
-            40 Push Ups <br />
+          <ul>
+           <li> 4 sets of 10 Box Squats 🏋️ <br /> </li>
+           <li> 4 sets of 10 Bench Press 🔥 <br /></li>
+           <li> 40 Push Ups  💪🏽 <br /></li>
+           <li> 4 sets of 8 Single Leg RDL's 🦵🏽  <br /></li> 
+          <li>4 sets of 10 Incline Bench Press 🔥 <br /></li>
+          <li> 4 sets of 5 split squat jumps 🦘 <br /></li>
+            </ul>
           </Typography>
         </Box>
       </Modal>

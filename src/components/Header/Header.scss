@@ -23,5 +23,29 @@
     font-family: Barlow;
     font-weight: 700;
     margin: 0;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+  
+    &::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease;
+    }
+  
+    &:hover {
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  
+      &::after {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        transform: scale(1.1);
+      }
+    }
   }
 }
