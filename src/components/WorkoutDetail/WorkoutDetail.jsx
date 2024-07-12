@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./WorkoutDetail.scss";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const WorkoutDetail = () => {
 
@@ -75,8 +76,9 @@ const WorkoutDetail = () => {
       </div>
 
       
-
+      <Link to ="/workout" className="training__start-button-link">
       <button className="training__start-button">Start Workout</button>
+      </Link>
       </>
     ): <p>LOADING WORKOUT!!!</p>}
     </div>

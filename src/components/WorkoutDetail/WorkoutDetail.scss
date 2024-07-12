@@ -100,6 +100,15 @@
         background-color: variables.$UpskillDarkBlue;
       }
     }
+
+    &__start-button-link {
+        display: block;
+        width: 100%;
+        max-width: 30rem;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+
     &__image-container {
         width: 100%;
         display: flex;

@@ -11,16 +11,58 @@ const Footer = () => {
   return (
     <>
       <BottomNavigation
-        sx={{ bgcolor: '#424242' }}
+        sx={{ bgcolor: "#424242" }}
         showLabels
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
       >
-        <BottomNavigationAction label="Home" icon={<HomeIcon />} sx={{color:'white'}}  />
-        <BottomNavigationAction label="Explore" icon={<SearchIcon />} sx={{color:'white'}} />
-        <BottomNavigationAction label="My Plan" icon={<CalendarMonthIcon />} sx={{color:'white'}} />
-        <BottomNavigationAction label="Profile" icon={<AccountBoxIcon />} sx={{color:'white'}} />
+        <BottomNavigationAction
+          component={Link}
+          to="/Home"
+          label="Home"
+          icon={<HomeIcon />}
+          sx={{
+            color: "white",
+            "&:hover": {
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+              color: "#90caf9",
+            },
+          }}
+        />
+        <BottomNavigationAction
+          label="Explore"
+          icon={<SearchIcon />}
+          sx={{
+            color: "white",
+            "&:hover": {
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+              color: "#90caf9",
+            },
+          }}
+        />
+        <BottomNavigationAction
+          label="My Plan"
+          icon={<CalendarMonthIcon />}
+          sx={{
+            color: "white",
+            "&:hover": {
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+              color: "#90caf9",
+            },
+          }}
+        />
+        <BottomNavigationAction
+          label="Profile"
+          icon={<AccountBoxIcon />}
+          sx={{
+            color: "white",
+            "&:hover": {
+              backgroundColor: "rgba(255, 255, 255, 0.08)",
+              color: "#90caf9",
+            },
+          }}
+        />
       </BottomNavigation>
     </>
   );
